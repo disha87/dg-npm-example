@@ -22,10 +22,14 @@
   "homepage": "https://github.com/disha87/dg-npm-example#readme",
   "dependencies": {
     "babel-preset-latest": "^6.24.1",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "underscore": "^1.9.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-commonjs-es2015-modules": "^4.0.1",
     "eslint": "^6.3.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",

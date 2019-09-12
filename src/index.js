@@ -1,4 +1,9 @@
 const _ = require('lodash');
+const foo = require('underscore');
+
+if (!foo) {
+  console.log('import error'); // eslint-disable-line no-console
+}
 
 console.log(_.size([1, 2, 3, 4, 5, 6])); // eslint-disable-line no-console
 
