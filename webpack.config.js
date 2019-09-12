@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'production',
     entry: './src/index.js',
     output: {
         filename: 'main.js',
@@ -8,6 +9,10 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.m?css$/,
+                use: ['style-loader', 'css-loader']        
+            },
             {
                 test: /\.m?js$/,
                 exclude: /(node_modules)/,
