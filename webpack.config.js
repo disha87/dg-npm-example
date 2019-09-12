@@ -14,7 +14,7 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        "presets": ["latest"]
+                        "presets": ["latest", "babel-preset-env"]
                     }
                 }
             }

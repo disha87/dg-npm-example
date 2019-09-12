@@ -1,5 +1,5 @@
-const _ = require('lodash');
-const foo = require('underscore');
+import _ from 'lodash';
+import Dog from './dog';
 
 if (!foo) {
   console.log('import error'); // eslint-disable-line no-console
@@ -12,3 +12,5 @@ const hello = (name = 'friend') => {
 };
 
 hello('Disha');
+
+console.log(`Hello dog - ${new Dog('Blue').getName()}`);
