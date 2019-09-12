@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src",
-    "build": "babel --preset env -d output src",
+    "build": "babel --preset latest -d output src",
     "ci": "npm run lint && npm run build",
     "start": "npm run ci && node output/index.js"
   },
@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/disha87/dg-npm-example#readme",
   "dependencies": {
+    "babel-preset-latest": "^6.24.1",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "eslint": "^6.3.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2"
